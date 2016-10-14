@@ -1,0 +1,100 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.js"></script>
+	<script src="scripts/underscore.js"></script>
+	<script src="scripts/backbone.js"></script>
+	<script src="scripts/data.js"></script>
+
+	<link href="css/admin.css" rel="stylesheet" type="text/css" media="all" />
+<body>
+
+
+<div id="searchPanel">
+<div id="searchBox"><input type="text" class="name" placeholder="search"/></div>
+<div id="searchResults">
+	<div class="subItems"></div>
+</div>
+</div>
+
+<div id="editForm">
+	<label for="active">Active</label><select id="active"><option value="true">Yes</option><option value="false">No</option></select>
+
+	<label>Name</label><input type="text" id="name" class="name"/>
+
+	<label>Short Descr</label><textarea id="shortDescr"></textarea>	
+
+	<label>Long Descr</label><textarea id="longDescr"></textarea>	
+
+	<label>Images</label>
+	<div id="imageGallery">
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>		
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>	
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" 
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>		
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>	
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>
+		<img src="https://www.eyewearconcierge.com/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/missing_3.jpg" class="preview"/>
+	</div>
+
+	<label>Tags</label><span id="keywords"></span>
+
+	<label>Attributes</label>
+	<table>
+		<thead>
+			<tr><td>Name</td><td>Value</td></tr>
+		</thead>
+		<tbody>
+			<tr><td>Category</td><td>Road</td></tr>
+			<tr><td>Category</td><td>Mountain</td></tr>
+			<tr><td>Brand</td><td>Shimano</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td><input type="text" class="prodAttrName"/></td><td><input type="text" class="prodAttrValue"/></td></tr>
+		</tfoot>
+	</table>
+
+
+	<label>Item Attributes</label>
+	<table>
+		<thead>
+			<tr><td>Name</td><td>Type</td></tr>
+		</thead>
+		<tbody>
+			<tr><td>Color</td><td>Colorpicker</td></tr>
+			<tr><td>Size</td><td>Select</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td><input type="text" class="prodAttrName"/></td><td><input type="text" class="prodAttrValue"/></td></tr>
+		</tfoot>
+	</table>
+
+	<label>Catalog</label>
+	<div>/ <a>Road</a> /  <a>Components</a> / <a>Drivetrain</a> /</div>
+	<div>/ <a>Mountain</a> /  <a>Components</a> / <a>Drivetrain</a> /</div>
+</div>
+
+<div id="subPanel">
+<div class="subItem">Race Face Narrow Wide</div>
+<div class="subItem">Race Face Narrow Wide</div>
+</div>
+</div>
+
+<div id="templates" style="display:none">
+	<div class="searchItem">
+		<div class="item"></div>
+		<div class="subItems"></div>
+	</div>
+</div>
+
+<script>
+$( document ).ready(function() {
+    categories.init();
+});
+</script>
+<script src="scripts/category.js"></script>
+</body>
+</html>

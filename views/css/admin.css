@@ -1,0 +1,112 @@
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+label[for=active] {
+	display: inline;
+	padding-right: 5px;
+}
+
+#searchPanel {
+	float:left;
+	width:275px;
+	position:fixed;
+}
+
+#searchResults {
+	margin-top: 5px;
+	overflow-y: auto;
+	max-height: 100vh;
+	overflow-x: hidden;
+}
+
+#searchResults .loading img {
+	width: 50px;
+}
+
+#searchResults .selected .item {
+	background: #aaa;
+}
+
+.searchItem {
+	margin: 2px 0 2px 2px;
+}
+
+.searchItem .item {
+	padding: 10px 15px 15px 10px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+#searchBox input {
+	width:100%;
+}
+
+#editForm {
+	margin-left:285px;
+	float:left;
+	width:calc(100% - 600px);
+}
+
+#editForm input {
+	width:100%;
+}
+
+#editForm textarea {
+	width:100%;
+}
+
+#editForm table {
+	border-collapse: collapse;
+	width:500px;
+}
+
+#editForm table td {
+	border: 1px solid;
+}
+
+#editForm table input {
+	width:100%;
+}
+
+.tag {
+	border: 1px solid black;
+	margin: 5px 5px 0 0;
+	padding: 3px 3px 3px 3px;
+	display: inline-block;
+}
+
+#subPanel {
+	float:left;
+	width:275px;
+	padding-left:20px;
+}
+
+.subItem {
+	margin:2px;
+	padding: 10px 15px 15px 10px;
+	border: 1px solid black;
+}
+
+#shortDescr {
+	height: 100px;
+}
+#longDescr {
+	height: 100px;
+}
+
+.preview {
+	height: 150px;
+	width: 150px;
+}
+
+#imageGallery {
+	white-space:nowrap;
+	overflow-x:auto;
+}
+
+.loading img {
+    display: block;
+    margin: auto;
+}

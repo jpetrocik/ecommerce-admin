@@ -1,0 +1,60 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.js"></script>
+	<script src="scripts/underscore.js"></script>
+	<script src="scripts/backbone.js"></script>
+	<script src="scripts/data.js"></script>
+
+	<link href="css/admin.css" rel="stylesheet" type="text/css" media="all" />
+<body>
+
+
+<div id="searchPanel">
+<div id="searchBox"><input type="text" class="name" placeholder="search"/></div>
+<div id="searchResults">
+	<div class="subItems"></div>
+</div>
+</div>
+
+<div id="editForm">
+	<form>
+	<label for="active">Active</label><select id="active"><option value="true">Yes</option><option value="false">No</option></select>
+
+	<label>Name</label><input type="text" id="name" class="name"/>
+
+	<label>Short Descr</label><textarea id="shortDescr"></textarea>	
+
+	<label>Long Descr</label><textarea id="longDescr"></textarea>	
+
+	<label>Images</label>
+	<div id="imageGallery">
+	</div>
+
+	<label>Tags</label><div id="keywords"></div>
+
+	<label>Catalog</label><div id="paths"></div>
+	</form>
+</div>
+
+<div id="subPanel">
+<div class="subItem">Race Face Narrow Wide</div>
+<div class="subItem">Race Face Narrow Wide</div>
+</div>
+</div>
+
+<div id="templates" style="display:none">
+	<div class="searchItem">
+		<div class="item"></div>
+		<div class="subItems"></div>
+	</div>
+</div>
+
+<script>
+$( document ).ready(function() {
+    categories.init();
+});
+</script>
+<script src="scripts/category.js"></script>
+</body>
+</html>
